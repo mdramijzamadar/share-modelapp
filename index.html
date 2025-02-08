@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/3385f1fd42.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+
+      <div class="card">
+        <div class="img spin-img">
+          <img src="./image/ramij.jpg" alt="my_image" />
+        </div>
+        <div class="user-name"><h2>Md Ramij Zamadar</h2></div>
+        <div class="user-detail">
+          <h3>Student, SETGOI <br />Frontend Developer</h3>
+        </div>
+
+        <div class="btn-grp">
+          <button class="btn-card btn-share" onclick="openModal()">
+            <div>
+              <i class="fa-solid fa-share"></i>
+              Share my profile
+            </div>
+          </button>
+          <button class="btn-follow btn-card">
+            <a href="http://">Follow me</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- modal section -->
+
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Share my profile</h3>
+          <div onclick="closeModal()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div>
+          <h4>Share this via</h4>
+          <div class="icon-container">
+            <a href="http://" id="facebook" class="icon"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="http://" id="twitter" class="icon"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="http://" id="instagram" class="icon"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="http://" id="whatsapp" class="icon"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="http://" id="telegram" class="icon"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+            <a href="http://" id="github" class="icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
